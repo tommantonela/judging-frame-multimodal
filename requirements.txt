@@ -1,0 +1,55 @@
+# Project requirements
+# Recommended Python version: 3.10 or newer
+#
+# Install with:
+#   python -m pip install -r requirements.txt
+#
+# PyTorch GPU builds are platform/CUDA specific. For GPU use, install the
+# appropriate torch and torchvision wheels from the official PyTorch index
+# before installing this file.
+
+# -----------------------------------------------------------------------------
+# Core data processing
+# -----------------------------------------------------------------------------
+numpy
+pandas
+Pillow
+tqdm
+requests
+
+# -----------------------------------------------------------------------------
+# Multimodal embedding generation
+# -----------------------------------------------------------------------------
+torch
+torchvision
+sentence-transformers
+transformers>=4.56.0
+safetensors
+
+# Optional NVIDIA GPU acceleration for the Nemotron embedding model.
+# Install separately because flash-attn requires a compatible CUDA toolchain:
+#   python -m pip install "flash-attn>=2.6.3,<2.8" --no-build-isolation
+
+# -----------------------------------------------------------------------------
+# Local LLM judge experiments
+# -----------------------------------------------------------------------------
+langchain-core
+langchain-ollama
+ollama
+
+# -----------------------------------------------------------------------------
+# Analysis notebook and chart generation
+# -----------------------------------------------------------------------------
+matplotlib
+seaborn
+scikit-learn
+umap-learn
+scipy
+pingouin
+json-repair
+
+# -----------------------------------------------------------------------------
+# Notebook runtime
+# -----------------------------------------------------------------------------
+jupyterlab
+ipykernel
